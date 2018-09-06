@@ -1,0 +1,47 @@
+﻿<head> 
+    <style>
+        fieldset {
+            width: 500px;
+        }
+        legend {
+            font-size: 20px;
+        }
+        label.field {
+            text-align:right;
+            width: 100px;
+            float: left;
+            font-weight: bold;
+        }
+        input
+        {
+            width:600px;
+            float: left;
+        }
+        fieldset p {
+            clear: both;
+            padding: 5px;
+        }
+    </style>
+    
+    </head>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h3>Daily Work Journal</h3>
+<form  method="POST">
+    <fieldset>
+        <legend>What Do You Plan To Do Today?</legend>
+        <input type="date" />
+        <p> Planned Tasks:<input type="text" name="Planned" placeholder="What's Today's Focus?" /></p>
+
+        <p> Interrupt Tasks:<input type="text" name="Interrupt" /></p>
+        <p> Notes<input type="text" name="Notes" /></p>
+        <p> Questions For Mentor<input type="text" name="Questions" /></p>
+        <input type="submit" value="Log">
+    </fieldset>
+</form>
+
+
+
